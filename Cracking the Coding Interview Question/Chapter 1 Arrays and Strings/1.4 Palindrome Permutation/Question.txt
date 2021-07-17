@@ -1,0 +1,24 @@
+Given a string, write a function to check if it is a permutation
+of a palindrome. A palindrome is a word or phrase that is the same
+forwards and backwards. A permutation is a rearrangement of letters.
+The palindrome does not neeed to be limited to just dictionary words.
+
+Example
+Input: Tact Coa
+Output: true (Permutation: "taco cat", will return true if at least
+one permutation of the input is palindrome)
+
+Explanation:
+We should return true of the permutation of the input is a palindrome
+
+Through the input case, we can see that this question is non case
+sensitive. I figured out a solution that is to check the character should 
+exist even times and only one character can exist in odd times
+
+for example,
+abccba == All the character exist even times which is true palindrome
+abcdcba == All the character exist even times except 'd' which is
+also true palindrome
+
+I derive a O(N) solution which is to check if each of the character
+exists in the string 
